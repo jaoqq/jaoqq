@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>FF Aim Tool</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial;
+      background: #0f0f0f;
+      color: white;
+      text-align: center;
+    }
+    h1 {
+      margin-top: 30px;
+      color: #a020f0;
+    }
+    .box {
+      background: #1a1a1a;
+      padding: 20px;
+      margin: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px #000;
+    }
+    input {
+      width: 80%;
+      padding: 10px;
+      margin: 10px;
+      border-radius: 5px;
+      border: none;
+      text-align: center;
+    }
+    button {
+      padding: 10px 20px;
+      border: none;
+      background: #a020f0;
+      color: white;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    .result {
+      margin-top: 15px;
+      font-size: 18px;
+      color: #00ffcc;
+    }
+  </style>
+</head>
+<body>
+
+<h1>🎯 FF Aim Tool</h1>
+
+<div class="box">
+  <h2>Gerador de Sensibilidade</h2>
+  <input type="number" id="dpi" placeholder="Digite seu DPI (ex: 400)">
+  <br>
+  <button onclick="gerar()">Gerar Sensibilidade</button>
